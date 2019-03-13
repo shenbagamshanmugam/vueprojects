@@ -1,7 +1,7 @@
 <template>
     <div id="main">
         <ul>
-            <li v-for="name in names" v-text="name"></li>
+            <li v-for="name in names" v-bind:key="name" v-text="name"></li>
         </ul>
         <input v-model="newname">
         <button @click="addname">addname</button>
